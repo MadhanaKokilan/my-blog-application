@@ -19,9 +19,42 @@
         <div class="home-text container">
             <h2 class="home-title">Welcome to My Blog</h2>
             <span class="subtitle">Every story is a journey, and every journey begins with a single word.</span>
+            <button class="create-blog" onclick="openModal()">Create Blog</button>
         </div>
-
     </section>
+
+    <!-- Modal Structure -->
+    <div id="blogModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Create a New Blog Post</h2>
+            <form id="blogForm">
+                <label for="imageUpload">Upload an Image:</label>
+                <input type="file" id="imageUpload" name="imageUpload" accept="image/*" required><br><br>
+    
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required><br><br>
+    
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required><br><br>
+    
+                <label for="date">Date of Post:</label>
+                <input type="date" id="date" name="date" value="" readonly><br><br>
+    
+                <label for="description">Post Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+    
+                <label for="creatorPhoto">Post Creator Photo:</label>
+                <input type="file" id="creatorPhoto" name="creatorPhoto" accept="image/*" required><br><br>
+    
+                <label for="creatorName">Creator's Name:</label>
+                <input type="text" id="creatorName" name="creatorName" required><br><br>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
     <div class="filter-post post-container">
         <span class="filters activefilters" data-filter="all">ALL</span>
         <span class="filters " data-filter="technology">Technology</span>
@@ -136,7 +169,6 @@
         </div>
 
         <div class="post-box health">
-
             <img src="/Images/post-9.jpg" alt="" class="post-image">
             <h2 class="category">Health</h2>
             <a href="post.html" class="post-title">Managing the technology in real world</a>
