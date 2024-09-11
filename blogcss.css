@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+:root{
+    --container-color:beige;
+    --text-color:green;
+    --second-color:rgb(76, 0, 255);
+    --bg-color:wheat;
+}
+::selection{
+    color: var(--bg-color);
+    background: var(--second-color);
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+header.shadow{
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    transition: 0.3s;
+
+}
+.container{
+    max-width:1068px;
+    margin: auto;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 600;
+    color: blueviolet;
+    
+}
+.loginlink {
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+    
+}
+.loginbutton{
+    background-color: red;
+    border: none;
+    border-radius: 7px;
+}
+.loginbutton:hover{
+    background-color: lightseagreen;
+    transition: 0.3s;
+}
+.home{
+    width: 100%;
+    min-height: 440px;
+    background: var(--container-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.home-text{
+    color: darkcyan;
+    text-align: center;
+}
+.home-title{
+    font-size: 3.5rem;
+}
+.subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.filter-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+}
+.filters{
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.activefilters{
+    background: var(--second-color);
+    color: var(--bg-color);
+    padding: 4px 10px;
+    border-radius: 5px;
+
+}
+.posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.post-box{
+    background: var(--bg-color);
+    box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
+    padding: 15px;
+    border-radius: 0.5rem;
+
+}
+.post-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    
+}
+.category{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+.post-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.post-date{
+    display: flex;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 4px;
+    
+}
+.post-descp{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.profile-picture{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--second-color);
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+    padding: 30px 0;
+    background-color: blanchedalmond;
+}
+.footer h3{
+    font-size: 1rem;
+
+}
+.socialLinks{
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+}
+.socialLinks .bx{
+    font-size: 1.3rem;
+    color: black;
+}
+.socialLinks .bx:hover{
+    color: lightseagreen;
+    transition: 0.4s;
+}
+
+.post-header{
+    width: 100%;
+    height: 500px;
+    background: var(--container-color);
+
+}
+.post-content{
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+
+}
+.head-content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 4rem !important;
+
+}
+.backHome{
+    color: var(--second-color);
+    font-size: 0.9rem;
+
+}
+.header-title{
+    width: 90%;
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.header-image{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-content{
+    margin-top: 10rem !important;
+    margin: 24% 24% 0;
+}
+
+.sub-heading{
+    font-size: 1.2rem;
+
+}
+.post-details{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 1rem 0 ;
+    text-align: justify;
+}
+.share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.share-title {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    /* Adds space between the text and the icons */
+}
+
+.share-social-icons {
+    display: flex;
+    gap: 1.5rem;
+    /* Adds space between the icons */
+}
+
+.share-social-icons a {
+    font-size: 1.5em;
+    color: #333;
+    
+}
+
+.share-social-icons a:hover {
+    color: #ff9800;
+    transition: color 0.3s;
+}
+  
